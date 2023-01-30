@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+
+body {
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    padding: 30px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.menu nav {
+    position:absolute;
+    left: 900px;
+    top: 100px;
+}
+
+.menu nav a {
+    font-size: 50px;
+    margin: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+    background-color: #5fa199;
+}
+
+.banner img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/design1_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+    background-color: #5fa199;
+}
+
+.logo{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    width: 250px;
+}
+
+.container {
+    position: relative;
+    bottom: 180px;
+    font-size: 30px;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+.container-about {
+    position: relative;
+    bottom: 120px;
+    font-size: 30px;
+    margin-left: 260px;
+}
+
+.container h3 {
+    padding: 20px;
+}
+
+.final-image {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-final {
+    width: 50%;
+    margin: 60px;
+}
