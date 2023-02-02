@@ -40,6 +40,22 @@ header h1 {
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
 }
+/*------------ FOOTER ------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5fa199;
+    height: 80px;
+}
+
+footer p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
 /*------------ MAIN ------------*/
 .hero-section {
     background-color: #5fa199;
