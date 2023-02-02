@@ -19,9 +19,9 @@ body {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: lighter;
-    padding: 30px;
+    padding: 20px;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
@@ -40,20 +40,24 @@ header h1 {
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
 }
+/*------------ MAIN ------------*/
+.hero-section {
+    background-color: #5fa199;
+}
 
-.banner img {
+.hero-section img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/design1_image1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
 
-.banner h2 {
+.hero-section h2 {
     text-align: center;
-    font-size: 60px;
+    font-weight: lighter;
+    font-size: 3.5em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
-    background-color: #5fa199;
 }
 
 .logo{
