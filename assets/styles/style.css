@@ -12,28 +12,33 @@ body {
 }
 
 /*------------ HEADER ------------*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5fa199;
+}
+
 header h1 {
-    font-size: 70px;
-    font-weight: bolder;
+    font-size: 2em;
+    font-weight: lighter;
     padding: 30px;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
 
-.menu nav {
-    position:absolute;
-    left: 900px;
-    top: 100px;
+.header-container nav {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
 }
 
-.menu nav a {
-    font-size: 50px;
-    margin: 20px;
-    padding: 5px 20px;
+.header-container nav a {
+    font-size: 1.8em;
+    font-weight: lighter;
+    padding: 10px;
     text-decoration: none;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
-    background-color: #5fa199;
 }
 
 .banner img {
