@@ -76,19 +76,18 @@ footer p {
     text-shadow: 8px 4px 8px #111;
 }
 
+.contenedor-general {
+    display: flex;
+    justify-content: space-around;
+}
 .logo{
-    display: inline-block;
-    position: relative;
-    top: 100px;
     width: 250px;
 }
 
 .container {
-    position: relative;
-    bottom: 180px;
-    font-size: 30px;
-    padding: 20px;
-    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-about {
@@ -99,7 +98,17 @@ footer p {
 }
 
 .container h3 {
-    padding: 20px;
+    font-size: 2em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container p {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #db6232;
 }
 
 .final-image {
