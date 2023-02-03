@@ -210,8 +210,10 @@ main {
     color: #c64832;
 }
 
-figure img {
-    width: 55%;
+.section-img img {
+    display: inline;
+    justify-content: center;
+    width: 40%;
     margin: 50px;
     border: 4px solid;
     color: #c64832;
