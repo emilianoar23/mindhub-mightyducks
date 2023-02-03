@@ -46,7 +46,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #5fa199;
-    height: 80px;
+    height:120px;
 }
 
 footer p {
@@ -57,6 +57,11 @@ footer p {
 }
 
 /*------------ MAIN ------------*/
+main {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.027)), url(../img/hockey_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .hero-section {
     background-color: #5fa199;
 }
@@ -74,13 +79,16 @@ footer p {
     font-size: 3.5em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
+    height: 80px;
 }
 
 .contenedor-general {
     display: flex;
     justify-content: space-around;
+    margin: 150px 0px;
 }
 .logo{
+    height: 100%;
     width: 250px;
 }
 
@@ -97,18 +105,25 @@ footer p {
     margin-left: 260px;
 }
 
-.container h3 {
-    font-size: 2em;
+.container-events {
+    padding: 50px 30px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.200));
+}
+
+.container-events h3 {
+    font-size: 2.5em;
     font-weight: lighter;
     padding-bottom: 10px;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
 
-.container p {
-    font-size: 2em;
+.container-events p {
+    font-size: 2.2em;
     font-weight: lighter;
-    color: #db6232;
+    color: #c64832;
 }
 
 .final-image {
@@ -118,6 +133,8 @@ footer p {
 }
 
 .image-final {
-    width: 50%;
+    width: 30%;
     margin: 50px;
+    border: 4px solid;
+    color: #c64832;
 }
