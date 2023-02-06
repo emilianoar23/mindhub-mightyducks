@@ -259,3 +259,11 @@ tbody th {
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
+
+.container-rules ul li {
+    list-style-position: inside;
+}
+
+.container-rules ol li {
+    list-style-position: inside;
+}
