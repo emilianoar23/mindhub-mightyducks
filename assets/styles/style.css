@@ -172,18 +172,35 @@ main {
 .container-rules h3 {
     font-size: 2em;
     font-weight: lighter;
+    text-align: center;
     padding-bottom: 10px;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
 
-.container-rules p {
+.container-rules h4 {
     font-size: 1.8em;
+    font-weight: lighter;
+    text-align: center;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container-rules h5 {
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+}
+
+.container-rules p {
     font-weight: lighter;
     color: #fdfdfd;
 }
 
 .container-rules dt {
+    font-size: 1.4em;
+    font-weight: lighter;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
@@ -194,6 +211,14 @@ main {
 
 .container-rules li {
     color: #fdfdfd;
+}
+
+.container-rules ul li {
+    list-style-position: inside;
+}
+
+.container-rules ol li {
+    list-style-position: inside;
 }
 
 
@@ -258,12 +283,4 @@ tbody th {
     font-size: 1.5em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
-}
-
-.container-rules ul li {
-    list-style-position: inside;
-}
-
-.container-rules ol li {
-    list-style-position: inside;
 }
