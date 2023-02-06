@@ -277,10 +277,28 @@ tbody {
 tbody th {
     color: #f8e12e;
     font-weight: lighter;
+    padding: 15px;
+}
+
+tbody td {
+    text-align: center;
+    font-weight: lighter;
+    padding: 15px;
 }
 
 .container-gameinfo p {
     font-size: 1.5em;
+    font-weight: lighter;
+    color: #fdfdfd ;
+    text-shadow: 8px 4px 8px #111;
+    padding: 10px;
+}
+
+.container-gameinfo b {
     color: #f8e12e;
-    text-shadow: 8px 4px 8px #111; 
+}
+
+.registration {
+    display: flex;
+    align-items: center;
 }
