@@ -62,34 +62,37 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero-section {
-    background-color: #5fa199;
-}
 
-.hero-section img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/design1_image1.jpg);
+.hero-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.180), rgba(0, 0, 0, 0.2)), url(../img/design1_image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
     width: 100%;
 }
 
-.hero-section h2 {
+.hero-section .logo{
+    width: 10%;
+    margin: 15px;
+}
+
+.hero-container {
+    background-color: #5fa199;
+}
+
+.hero-container h2 {
     text-align: center;
     font-weight: lighter;
     font-size: 3.5em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
-    height: 80px;
+    padding: 20px;
 }
 
 .contenedor-general {
     display: flex;
     justify-content: space-around;
     margin: 150px 0px;
-}
-.logo{
-    height: 100%;
-    width: 250px;
 }
 
 .container {
@@ -222,27 +225,15 @@ main {
 }
 
 
-.final-image {
+.galery img{
     display: inline;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-final {
-    width: 35%;
-    margin: 50px;
-    border: 4px solid;
-    color: #c64832;
-}
-
-.section-img img {
-    display: inline;
-    justify-content: center;
+    justify-content: space-around;
     width: 40%;
     margin: 50px;
     border: 4px solid;
     color: #c64832;
 }
+
 
 table {
     font-size: 1.5em;
@@ -298,7 +289,3 @@ tbody td {
     color: #f8e12e;
 }
 
-.registration {
-    display: flex;
-    align-items: center;
-}

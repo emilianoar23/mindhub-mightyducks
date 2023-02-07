@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Mighty Ducks Hockey League</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -15,50 +17,71 @@
             <nav>
                 <a class="#" href="./index.html">Home</a>
                 <a class="#" href="./aboutMDHL.html">About MDHL</a>
+                <a class="#" href="./contact.html">Contact</a>
                 <a class="#" href="./game_info.html">Game Info</a>
                 <a class="#" href="./rules.html">Rules</a>
-                <a class="#" href="./contact.html">Contact</a>
                 <a class="#" href="./registration.html">Registration</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero-section">
-            <img src="./assets/img/design1_image2.jpg" alt="baner image">
-            <h2>Registration</h2>
+        <section>
+            <div class="hero-section">
+                <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo">
+            </div>
+            <div class="hero-container">
+                <h2>Registration</h2>
+            </div>
         </section>
-        <section class="registration">
-            <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo">
+        <section class="contenedor-general">
             <form action="./show-data.html" method="GET">
                 <fieldset>
                     <legend>Registration Form</legend>
-                    <label for="name">Player's First Name</label>
-                    <input type="text" name="name" placeholder="Your Name">
+                    <label for="name">Player's First Name:</label>
+                    <input type="text" name="name" placeholder="Your Name" id="name">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" name="lname" placeholder="Your Last Name">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Your Last Name" id="lname">
 
-                    <label for="address">Street Address</label>
+                    <label>Street Address:</label>
                     <input type="text" name="address" placeholder="Your Address">
 
-                    <label for="city">City</label>
+                    <label>City:</label>
                     <input type="text" name="city" placeholder="Your City">
 
-                    <label for="zipcode">Zip Code</label>
+                    <label>Zip Code:</label>
                     <input type="text" name="zipcode" placeholder="Zip Code">
 
-                    <label for="birthdate">Bird Date (mm/dd/yyyy)</label>
+                    <label>Bird Date (mm/dd/yyyy):</label>
                     <input type="number" name="month" placeholder="Month" min="1" max="12">
                     <input type="number" name="day" placeholder="Day" min="1" max="31">
                     <input type="number" name="age" placeholder="Year" min="1900" max="2023">
 
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="female">
+                    <span>Female</span>
+                    <input type="radio" name="gender" value="male">
+                    <span>Male</span>
+
+
+
+
+
+
                 </fieldset>
                 <input type="submit" value="Send">
             </form>
+        </section>
+        <section>
+            <div class="galery">
+                <img src="./assets/img/hockey_9.jpg" alt="hockey player" class="image-final">
+                <img src="./assets/img/hockey_11.jpg" alt="hockey player" class="image-final">
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2023 Mighty Ducks Hockey League. All Rights Reserved. </p>
     </footer>
 </body>
+
 </html>
