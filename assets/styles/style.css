@@ -58,9 +58,11 @@ footer p {
 
 /*------------ MAIN ------------*/
 main {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.027)), url(../img/hockey_1.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.027)), url(../img/hockey_12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-section {
