@@ -57,7 +57,7 @@ footer p {
     text-shadow: 8px 4px 8px #111; 
 }
 
-/*------------ MAIN ------------*/
+/*------------ HOME ------------*/
 main {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.027)), url(../img/hockey_12.jpg);
     background-repeat: no-repeat;
@@ -100,11 +100,37 @@ main {
     margin: 50px 0px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container-events {
+    padding: 50px 30px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.200));
 }
+
+.container-events h3 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container-events p {
+    font-size: 2.2em;
+    font-weight: lighter;
+    color: #fdfdfd;
+}
+
+.galery img{
+    display: inline;
+    justify-content: space-around;
+    width: 40%;
+    margin: 50px;
+    border: 4px solid;
+    color: #c64832;
+}
+
+/*------------ ABOUT ------------*/
 
 .container-about {
     padding: 50px 30px;
@@ -127,6 +153,8 @@ main {
     color: #fdfdfd;
 }
 
+/*------------ CONTACT ------------*/
+
 .container-contact {
     padding: 50px 30px;
     background-image: linear-gradient(0deg,
@@ -148,95 +176,7 @@ main {
     color: #fdfdfd;
 }
 
-.container-events {
-    padding: 50px 30px;
-    background-image: linear-gradient(0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.200));
-}
-
-.container-events h3 {
-    font-size: 2.5em;
-    font-weight: lighter;
-    padding-bottom: 10px;
-    color: #f8e12e;
-    text-shadow: 8px 4px 8px #111; 
-}
-
-.container-events p {
-    font-size: 2.2em;
-    font-weight: lighter;
-    color: #fdfdfd;
-}
-
-.container-rules {
-    font-size: 1.2em;
-    padding: 40px 40px;
-    background-image: linear-gradient(0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.200));
-}
-
-.container-rules h3 {
-    font-size: 2em;
-    font-weight: lighter;
-    text-align: center;
-    padding-bottom: 10px;
-    color: #f8e12e;
-    text-shadow: 8px 4px 8px #111; 
-}
-
-.container-rules h4 {
-    font-size: 1.8em;
-    font-weight: lighter;
-    text-align: center;
-    color: #f8e12e;
-    text-shadow: 8px 4px 8px #111; 
-}
-
-.container-rules h5 {
-    font-size: 1.4em;
-    font-weight: lighter;
-    color: #f8e12e;
-    text-shadow: 8px 4px 8px #111;
-}
-
-.container-rules p {
-    font-weight: lighter;
-    color: #fdfdfd;
-}
-
-.container-rules dt {
-    font-size: 1.4em;
-    font-weight: lighter;
-    color: #f8e12e;
-    text-shadow: 8px 4px 8px #111; 
-}
-
-.container-rules dd {
-    color: #fdfdfd;
-}
-
-.container-rules li {
-    color: #fdfdfd;
-}
-
-.container-rules ul li {
-    list-style-position: inside;
-}
-
-.container-rules ol li {
-    list-style-position: inside;
-}
-
-.galery img{
-    display: inline;
-    justify-content: space-around;
-    width: 40%;
-    margin: 50px;
-    border: 4px solid;
-    color: #c64832;
-}
+/*------------ GAME INFO ------------*/
 
 table {
     font-size: 1.5em;
@@ -316,6 +256,70 @@ iframe  {
     padding: 20px;
 }
 
+/*------------ RULES ------------*/
+
+.container-rules {
+    font-size: 1.8em;
+    padding: 40px 40px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.200));
+}
+
+.container-rules h3 {
+    font-size: 1.9em;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container-rules h4 {
+    font-size: 1.8em;
+    font-weight: lighter;
+    text-align: center;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container-rules h5 {
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+}
+
+.container-rules p {
+    font-weight: lighter;
+    color: #fdfdfd;
+}
+
+.container-rules dt {
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+.container-rules dd {
+    color: #fdfdfd;
+}
+
+.container-rules li {
+    color: #fdfdfd;
+}
+
+.container-rules ul li {
+    list-style-position: inside;
+}
+
+.container-rules ol li {
+    list-style-position: inside;
+}
+
+/*------------ REGISTRATION ------------*/
+
 .form-container {
     margin: 30px;
     padding: 30px;
@@ -323,17 +327,37 @@ iframe  {
 
 form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-image: linear-gradient(0deg,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.400));
     padding: 20px;
 }
 
-form label {
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+}
+
+fieldset .regform {
     display: flex;
     align-items: center;
-    column-count: 2;
+    flex-wrap: wrap;
+}
+
+fieldset .grade {
+    display: flex;
+    align-items: center;
+}
+
+fieldset .grade h3 {
+    margin-right: 10px;
+}
+
+fieldset .school {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 form legend {
@@ -342,11 +366,7 @@ form legend {
     text-align: center;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
-    padding: 15px;
-}
-
-form .h2 {
-    text-align: left;
+    padding: 1px;
 }
 
 h2 {
@@ -355,11 +375,22 @@ h2 {
     font-size: 2em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111;
+}
+
+h3 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 1.6em;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+}
+
+form fieldset {
     padding: 20px;
 }
 
 form fieldset label {
-    margin: 20px
+    margin: 5px
 }
 
 fieldset label {
@@ -369,14 +400,43 @@ fieldset label {
 }
 
 fieldset input {
-    max-width: 400px;
+    max-width: 300px;
     margin: 10px;
     padding: 6px;
     border: none;
     outline-color: #5fa199;
 }
 
+.school {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.text {
+    padding: 20px;
+    color:  #fdfdfd;
+    font-size: 1.2em;
+}
+
+.text h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+#signature {
+    padding: 5px;
+    width: 180px;
+}
+
+#button {
+    font-size: 1.4em;
+    padding: 10px;
+    width: 100px;
+}
 
 
 /*------------------- MEDIA QUERIES MOBILE -----------------*/
@@ -478,8 +538,6 @@ iframe  {
     font-size: 1em;
 }
 
-/*------------ REGISTRATION ------------*/
-
 
 }
 
@@ -575,11 +633,5 @@ iframe  {
 .container-rules {
     font-size: 1.1em;
 }
-
-/*------------ REGISTRATION ------------*/
-
-
-
-
 
 }
