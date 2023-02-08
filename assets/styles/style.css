@@ -306,6 +306,7 @@ tbody td {
 .locations {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 iframe  {
@@ -402,12 +403,21 @@ fieldset input {
 }
 
 /*------------ FOOTER ------------*/
+
 footer p {
     font-size: 1.2em;
     text-align: center;
 }
 
 /*------------ HOME ------------*/
+
+.hero-section {
+    background-attachment: scroll;
+}
+
+.hero-section .logo{
+    width: 30%;
+}
 
 .hero-container {
     height: 80px;
@@ -426,6 +436,45 @@ footer p {
     flex-direction: column;
     width: 70%;
 }
+
+/*------------ ABOUT ------------*/
+
+.container-about {
+    font-size: 0.6em;
+}
+
+/*------------ CONTACT ------------*/
+
+.container-contact {
+    font-size: 0.6em;
+}
+
+/*------------ GAME INFO ------------*/
+
+table {
+    font-size: 0.9em;
+}
+
+thead th {
+    padding: 10px;
+}
+
+.container-gameinfo p {
+    font-size: 1.3em;
+}
+
+iframe  {
+    width: 40%;
+    padding: 10px;
+}
+
+/*------------ RULES ------------*/
+
+.container-rules {
+    font-size: 1em;
+}
+
+/*------------ REGISTRATION ------------*/
 
 
 
