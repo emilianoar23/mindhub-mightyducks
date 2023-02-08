@@ -69,6 +69,8 @@ main {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.180), rgba(0, 0, 0, 0.2)), url(../img/design1_image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 300px;
     width: 100%;
 }
@@ -94,7 +96,7 @@ main {
 .contenedor-general {
     display: flex;
     justify-content: space-around;
-    margin: 150px 0px;
+    margin: 50px 0px;
 }
 
 .container {
@@ -226,7 +228,6 @@ main {
     list-style-position: inside;
 }
 
-
 .galery img{
     display: inline;
     justify-content: space-around;
@@ -236,28 +237,31 @@ main {
     color: #c64832;
 }
 
-
 table {
     font-size: 1.5em;
     color: #fdfdfd ;
     background-image: linear-gradient(0deg,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.200));
-    padding: 25px;
 }
 
 caption {
+    text-align: left;
     font-size: 1.5em;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; 
 }
 
 thead {
-    display: flex;
-    flex-direction: column;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.400));
+}
+
+thead th {
     font-weight: lighter;
-    color: #fc4929;
-    text-shadow: 8px 4px 8px #111;
+    color: #f8e12e;
+    padding: 30px;
 }
 
 tbody {
@@ -279,6 +283,14 @@ tbody td {
     padding: 15px;
 }
 
+.container-gameinfo {
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.400));
+    padding: 60px;
+    margin: 60px;
+}
+
 .container-gameinfo p {
     font-size: 1.5em;
     font-weight: lighter;
@@ -291,3 +303,134 @@ tbody td {
     color: #f8e12e;
 }
 
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+iframe  {
+    width: 30%;
+    height: 10%;
+    padding: 20px;
+}
+
+.form-container {
+    margin: 30px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.400));
+    padding: 20px;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    column-count: 2;
+}
+
+form legend {
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+    padding: 15px;
+}
+
+form .h2 {
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 2em;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+    padding: 20px;
+}
+
+form fieldset label {
+    margin: 20px
+}
+
+fieldset label {
+    font-size: 1.5em;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111; 
+}
+
+fieldset input {
+    max-width: 400px;
+    margin: 10px;
+    padding: 6px;
+    border: none;
+    outline-color: #5fa199;
+}
+
+/*------------------- MEDIA QUEIES -----------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+
+/*------------ HEADER ------------*/
+
+.header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container h1 {
+    font-size: 1.6em;
+}
+
+.header-container nav {
+    display: block;
+    justify-content: baseline;
+    padding: 10px;
+    margin: 0;
+}
+
+.header-container nav a {
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+/*------------ FOOTER ------------*/
+footer p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*------------ HOME ------------*/
+
+.hero-container {
+    height: 80px;
+}
+
+.hero-container h2 {
+    font-size: 1.8em;
+}
+
+.container-events {
+    font-size: 0.8em;
+}
+
+.galery img {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+
+
+
+
+
+}
