@@ -13,12 +13,13 @@ body {
 
 /*------------ HEADER ------------*/
 .header-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #5fa199;
 }
 
-header h1 {
+.header-container h1 {
     font-size: 2.5em;
     font-weight: lighter;
     padding: 20px;
@@ -76,7 +77,7 @@ main {
 }
 
 .hero-section .logo{
-    width: 10%;
+    width: 160px;
     margin: 15px;
 }
 
@@ -375,7 +376,10 @@ fieldset input {
     outline-color: #5fa199;
 }
 
-/*------------------- MEDIA QUEIES -----------------*/
+
+
+
+/*------------------- MEDIA QUERIES MOBILE -----------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
 
@@ -416,7 +420,7 @@ footer p {
 }
 
 .hero-section .logo{
-    width: 30%;
+    width: 100px;
 }
 
 .hero-container {
@@ -428,7 +432,7 @@ footer p {
 }
 
 .container-events {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .galery img {
@@ -475,6 +479,107 @@ iframe  {
 }
 
 /*------------ REGISTRATION ------------*/
+
+
+}
+
+/*------------------- MEDIA QUERIES TABLET -----------------*/
+
+@media only screen and (min-width: 479px) and (max-width: 828px){
+
+/*------------ HEADER ------------*/
+
+.header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.header-container nav a {
+    font-size: 1.3em;
+}
+
+/*------------ FOOTER ------------*/
+
+footer p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/*------------ HOME ------------*/
+
+.hero-section {
+    background-attachment: scroll;
+}
+
+.hero-section .logo{
+    width: 120px;
+}
+
+.hero-container {
+    height: 80px;
+}
+
+.hero-container h2 {
+    font-size: 2.2em;
+}
+
+.container-events {
+    font-size: 0.9em;
+}
+
+.galery img {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/*------------ ABOUT ------------*/
+
+.container-about {
+    font-size: 0.9em;
+}
+
+/*------------ CONTACT ------------*/
+
+.container-contact {
+    font-size: 0.9em;
+}
+
+/*------------ GAME INFO ------------*/
+
+table {
+    font-size: 1.2em;
+}
+
+thead th {
+    padding: 15px;
+}
+
+.container-gameinfo p {
+    font-size: 1.4em;
+}
+
+iframe  {
+    width: 50%;
+    padding: 15px;
+}
+
+/*------------ RULES ------------*/
+
+.container-rules {
+    font-size: 1.1em;
+}
+
+/*------------ REGISTRATION ------------*/
+
+
+
 
 
 }
