@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5fa199;
+    height:120px;
+    p {
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: #f8e12e;
+        text-shadow: 8px 4px 8px #111; 
+    }
+}

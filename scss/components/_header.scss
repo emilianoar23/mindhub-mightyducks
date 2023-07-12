@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5fa199;
+    h1 {
+        font-size: 2.5em;
+        font-weight: lighter;
+        padding: 20px;
+        color: #f8e12e;
+        text-shadow: 8px 4px 8px #111; 
+    }
+    nav {
+        display: flex;
+        align-items: flex-end;
+        margin-right: 20px;
+        a {
+            font-size: 1.8em;
+            font-weight: lighter;
+            padding: 10px;
+            text-decoration: none;
+            color: #f8e12e;
+            text-shadow: 8px 4px 8px #111;
+        }
+    }
+}
