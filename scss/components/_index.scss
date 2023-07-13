@@ -29,7 +29,10 @@ main {
         }
     }
     .events {
-        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        margin: 50px 60px;
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.200));
@@ -50,7 +53,8 @@ main {
     }
     .gallery {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: auto;
         width: 40%;
         img {
             width: 100%;
