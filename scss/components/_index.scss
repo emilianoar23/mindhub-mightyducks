@@ -23,8 +23,8 @@ main {
             text-align: center;
             font-weight: lighter;
             font-size: 3.5em;
-            color: #f8e12e;
-            text-shadow: 8px 4px 8px #111;
+            color: $main-font-color;
+            text-shadow: $text-shadow;
             padding: 20px;
         }
     }
@@ -37,22 +37,25 @@ main {
             font-size: 2.5em;
             font-weight: lighter;
             padding-bottom: 10px;
-            color: #f8e12e;
-            text-shadow: 8px 4px 8px #111;
+            color: $main-font-color;
+            text-shadow: $text-shadow;
             text-align: center;
         }
         p {
             font-size: 2.2em;
             font-weight: lighter;
-            color: #fdfdfd;
+            color: $secondary-font-color;
             text-align: center;
         }
     }
     .gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
         img {
-            display: inline;
-            justify-content: space-around;
-            width: 40%;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
             margin: 50px;
             border: 4px solid;
             color: #c64832;
