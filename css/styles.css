@@ -111,6 +111,71 @@ main {
     font-weight: lighter;
     color: #fdfdfd; }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 50px 60px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); }
+  .contact h3 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    color: #f8e12e;
+    text-shadow: 8px 4px 8px #111;
+    text-align: center; }
+  .contact p {
+    font-size: 2.2em;
+    font-weight: lighter;
+    color: #fdfdfd;
+    text-align: center; }
+
+.container-gameinfo {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+  padding: 60px;
+  margin: 60px; }
+  .container-gameinfo p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #fdfdfd;
+    text-shadow: 8px 4px 8px #111;
+    padding: 10px; }
+    .container-gameinfo p b {
+      color: #f8e12e; }
+  .container-gameinfo table {
+    font-size: 1.5em;
+    color: #fdfdfd;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+    .container-gameinfo table caption {
+      text-align: left;
+      font-size: 1.5em;
+      color: #f8e12e;
+      text-shadow: 8px 4px 8px #111; }
+    .container-gameinfo table thead {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)); }
+      .container-gameinfo table thead th {
+        font-weight: lighter;
+        color: #f8e12e;
+        padding: 30px; }
+    .container-gameinfo table tbody {
+      font-weight: lighter;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)); }
+      .container-gameinfo table tbody td {
+        text-align: center;
+        font-weight: lighter;
+        padding: 15px; }
+  .container-gameinfo .locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .container-gameinfo .locations iframe {
+      width: 30%;
+      height: 10%;
+      padding: 20px; }
+
 footer {
   display: flex;
   justify-content: center;

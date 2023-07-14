@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 50px 60px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.200));
+    h3 {
+        font-size: 2.5em;
+        font-weight: lighter;
+        padding-bottom: 10px;
+        color: $main-font-color;
+        text-shadow: $text-shadow;
+        text-align: center;
+    }
+    p {
+        font-size: 2.2em;
+        font-weight: lighter;
+        color: $secondary-font-color;
+        text-align: center;
+    }
+}
