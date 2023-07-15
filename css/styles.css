@@ -212,6 +212,112 @@ main {
     font-weight: lighter;
     color: #fdfdfd; }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 75%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+  margin: 30px auto;
+  padding: 20px; }
+  form fieldset {
+    border: none; }
+    form fieldset h3 {
+      font-size: 3.5em;
+      text-align: center;
+      color: #f8e12e;
+      font-weight: lighter;
+      text-shadow: 8px 4px 8px #111;
+      padding: 1px;
+      margin-bottom: 5px; }
+    form fieldset h4 {
+      font-size: 1.8em;
+      color: #f8e12e;
+      font-weight: lighter;
+      text-shadow: 8px 4px 8px #111;
+      padding: 1px;
+      margin-bottom: 5px; }
+    form fieldset legend {
+      font-size: 2em;
+      font-weight: lighter;
+      color: #f8e12e;
+      text-shadow: 8px 4px 8px #111;
+      padding: 1px;
+      margin-top: 10px; }
+    form fieldset .regform {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      form fieldset .regform .name-fields {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; }
+      form fieldset .regform .city-zip {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; }
+      form fieldset .regform .birthdate-gender {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        width: 100%; }
+        form fieldset .regform .birthdate-gender .gender {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: baseline; }
+      form fieldset .regform .grade {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline; }
+    form fieldset .school {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+    form fieldset .positions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+
+form fieldset {
+  padding: 20px; }
+
+form fieldset label {
+  margin: 5px; }
+
+fieldset label {
+  font-size: 1.5em;
+  color: #f8e12e;
+  text-shadow: 8px 4px 8px #111; }
+
+fieldset input {
+  max-width: 300px;
+  margin: 10px;
+  padding: 6px;
+  border: none;
+  outline-color: #5fa199; }
+
+.text {
+  padding: 20px;
+  color: #fdfdfd;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.text h4 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #f8e12e;
+  text-shadow: 8px 4px 8px #111; }
+
+#signature {
+  padding: 5px;
+  width: 180px; }
+
+#button {
+  font-size: 1.4em;
+  padding: 10px;
+  width: 100px; }
+
 footer {
   display: flex;
   justify-content: center;
