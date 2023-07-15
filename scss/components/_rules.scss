@@ -1,0 +1,49 @@
+@import "../base/variables";
+
+.rules-container {
+    font-size: 1.8em;
+    padding: 40px 40px;
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.200));
+    h3 {
+        font-size: 1.9em;
+        font-weight: lighter;
+        text-align: center;
+        padding-bottom: 10px;
+        color: #f8e12e;
+        text-shadow: 8px 4px 8px #111; 
+    }
+    h4 {
+        font-size: 1.8em;
+        font-weight: lighter;
+        text-align: center;
+        color: #f8e12e;
+        text-shadow: 8px 4px 8px #111; 
+    }
+    dl{
+        dt {
+            font-size: 1.3em;
+            font-weight: lighter;
+            color: #f8e12e;
+            text-shadow: 8px 4px 8px #111; 
+        }
+        dd {
+            color: #fdfdfd;
+        }
+    }
+    h5 {
+        font-size: 1.4em;
+        font-weight: lighter;
+        color: #f8e12e;
+        text-shadow: 8px 4px 8px #111;
+    }
+    li {
+        color: #fdfdfd;
+        list-style-position: inside;
+    }
+    p {
+        font-weight: lighter;
+        color: #fdfdfd;
+    }
+}
