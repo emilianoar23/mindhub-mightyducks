@@ -255,29 +255,40 @@ form {
       margin: 10px;
       padding: 6px;
       border: none;
-      outline-color: #5fa199; }
-    form fieldset .regform {
+      margin-bottom: 5px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      background-color: transparent;
+      color: #ebebeb; }
+    form fieldset .input-wrap {
       display: flex;
       flex-wrap: wrap;
       width: 100%; }
-      form fieldset .regform .name-fields {
+      form fieldset .input-wrap input {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent; }
+        form fieldset .input-wrap input::placeholder {
+          color: #f0f0f0; }
+      form fieldset .input-wrap .city-zip {
         display: flex;
         flex-wrap: wrap;
         width: 100%; }
-      form fieldset .regform .city-zip {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%; }
-      form fieldset .regform .birthdate-gender {
+      form fieldset .input-wrap .birthdate-gender {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
         width: 100%; }
-        form fieldset .regform .birthdate-gender .gender {
+        form fieldset .input-wrap .birthdate-gender .gender {
           display: flex;
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           align-items: baseline; }
-      form fieldset .regform .grade {
+      form fieldset .input-wrap .grade {
         display: flex;
         flex-wrap: wrap;
         align-items: center; }
@@ -291,15 +302,32 @@ form {
     color: #f0f0f0;
     font-size: 1.2em;
     margin-bottom: 20px; }
-
-#signature {
-  padding: 5px;
-  width: 180px; }
-
-#button {
-  font-size: 1.4em;
-  padding: 10px;
-  width: 100px; }
+    form .text h4 {
+      margin: 0; }
+    form .text input {
+      font-size: 16px;
+      color: #fff;
+      margin: 0 15px;
+      padding: 6px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent; }
+  form #button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: #5fa199;
+    font-size: 1.4em;
+    margin: 0 30px;
+    padding: 10px;
+    width: 130px;
+    border-radius: 3px;
+    border-color: transparent; }
+    form #button:hover {
+      color: #c64832;
+      text-shadow: 2px 2px 4px #551f16; }
 
 footer {
   display: flex;
@@ -312,3 +340,113 @@ footer {
     font-weight: lighter;
     color: #f8e12e;
     text-shadow: 8px 4px 8px #111; }
+
+/*------------------- MEDIA QUERIES MOBILE -----------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header h1 {
+      font-size: 1.8em;
+      margin: 15px auto;
+      padding: 0; }
+    header nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.8em;
+      padding: 0;
+      margin: 0; }
+  main .hero-section .logo {
+    margin: 0;
+    display: flex;
+    justify-content: center; }
+  /*------------ FOOTER ------------*/
+  footer p {
+    font-size: 1.2em;
+    text-align: center; }
+  /*------------ HOME ------------*/
+  .hero-section {
+    background-attachment: scroll; }
+  .hero-section .logo {
+    width: 100px; }
+  .hero-container {
+    height: 80px; }
+  .hero-container h2 {
+    font-size: 1.8em; }
+  .container-events {
+    font-size: 0.6em; }
+  .galery img {
+    display: flex;
+    flex-direction: column;
+    width: 70%; }
+  /*------------ ABOUT ------------*/
+  .container-about {
+    font-size: 0.6em; }
+  /*------------ CONTACT ------------*/
+  .container-contact {
+    font-size: 0.6em; }
+  /*------------ GAME INFO ------------*/
+  table {
+    font-size: 0.9em; }
+  thead th {
+    padding: 10px; }
+  .container-gameinfo p {
+    font-size: 1.3em; }
+  iframe {
+    width: 40%;
+    padding: 10px; }
+  /*------------ RULES ------------*/
+  .container-rules {
+    font-size: 1em; } }
+
+/*------------------- MEDIA QUERIES TABLET -----------------*/
+@media only screen and (min-width: 479px) and (max-width: 828px) {
+  /*------------ HEADER ------------*/
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .header-container h1 {
+    font-size: 2.4em;
+    text-align: center; }
+  .header-container nav a {
+    font-size: 1.3em; }
+  /*------------ FOOTER ------------*/
+  footer p {
+    font-size: 1.3em;
+    text-align: center; }
+  /*------------ HOME ------------*/
+  .hero-section {
+    background-attachment: scroll; }
+  .hero-section .logo {
+    width: 120px; }
+  .hero-container {
+    height: 80px; }
+  .hero-container h2 {
+    font-size: 2.2em; }
+  .container-events {
+    font-size: 0.9em; }
+  .galery img {
+    display: flex;
+    flex-direction: column;
+    width: 70%; }
+  /*------------ ABOUT ------------*/
+  .container-about {
+    font-size: 0.9em; }
+  /*------------ CONTACT ------------*/
+  .container-contact {
+    font-size: 0.9em; }
+  /*------------ GAME INFO ------------*/
+  table {
+    font-size: 1.2em; }
+  thead th {
+    padding: 15px; }
+  .container-gameinfo p {
+    font-size: 1.4em; }
+  iframe {
+    width: 50%;
+    padding: 15px; }
+  /*------------ RULES ------------*/
+  .container-rules {
+    font-size: 1.1em; } }

@@ -30,16 +30,14 @@
         <form action="./show-data.html" method="GET">
             <fieldset>
                 <h3>Registration Form</h3>
-                <div class="regform">
-                    <div class="name-fields">
-                        <div>
-                            <label for="name">Player's First Name:</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name">
-                        </div>
-                        <div>
-                            <label for="lname">Last Name:</label>
-                            <input type="text" name="lname" id="lname" placeholder="Your Last Name">
-                        </div>
+                <div class="input-wrap">
+                    <div>
+                        <label for="name">Player's First Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" placeholder="Your Last Name">
                     </div>
                     <div>
                         <label for="address">Street Address:</label>
@@ -62,10 +60,10 @@
                         </div>
                         <div class="gender">
                             <h4>Gender:</h4>
-                            <label for="gender1">Male</label>
-                            <input type="radio" name="gender1" id="gender1" value="male">
                             <label for="gender2">Female</label>
                             <input type="radio" name="gender1" id="gender2" value="female">
+                            <label for="gender1">Male</label>
+                            <input type="radio" name="gender1" id="gender1" value="male">
                         </div>
                     </div>
                     <div class="grade">
@@ -161,24 +159,20 @@
               </fieldset>
             <div class="text">
                 <h4>Permission to Play</h4>
-
                 <p>|, the parent or guardian of the minor registrant, agree that the registrant and | will abide by all
-                the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
-                associated with hockey and in consideration for the “League” accepting the registrant for its
-                hockey programs and activities, | hereby release, discharge, and/or otherwise indemnify MDHL,
-                their employees and associated personnel and volunteers,including the facilities used for
-                practices and games, against any claim by or on behalf of the registrant as a result of the
-                registrant's participation in the programand/orbeing transported to or from MDHL sponsored
-                activities,which transportation.
-                By signing below, | herebyagree andauthorizethe above.In addition, by signing below, lalso
-                acknowledge that | have read the cancellation policy and agree to its terms.</p>
-
+                    the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                    associated with hockey and in consideration for the “League” accepting the registrant for its
+                    hockey programs and activities, | hereby release, discharge, and/or otherwise indemnify MDHL,
+                    their employees and associated personnel and volunteers,including the facilities used for
+                    practices and games, against any claim by or on behalf of the registrant as a result of the
+                    registrant's participation in the programand/orbeing transported to or from MDHL sponsored
+                    activities,which transportation.
+                    By signing below, | herebyagree andauthorizethe above.In addition, by signing below, lalso
+                    acknowledge that | have read the cancellation policy and agree to its terms.</p><br>
                 <label for="signature">Parent/GuardianSignature:</label>
-                <input type="text" name="signature1" id="signature">
-                <div>
-                    <label for="date">Date:</label>
-                    <input type="date" name="signaturedate" id="date">
-                </div>
+                <input type="text" name="signature1" id="signature"><br>
+                <label for="date">Date:</label>
+                <input type="date" name="signaturedate" id="date">
             </div>
             <input type="submit" value="Send" id="button">
         </form>

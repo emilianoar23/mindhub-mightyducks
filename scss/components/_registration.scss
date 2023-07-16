@@ -47,16 +47,28 @@ form {
       margin: 10px;
       padding: 6px;
       border: none;
-      outline-color: #5fa199;
+      margin-bottom: 5px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      background-color: transparent;
+      color: rgb(235, 235, 235);
     }
-    .regform {
+    .input-wrap {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      .name-fields {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+      input {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        &::placeholder {
+          color: #f0f0f0;
+        }
       }
       .city-zip {
         display: flex;
@@ -70,7 +82,7 @@ form {
         width: 100%;
         .gender {
           display: flex;
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           align-items: baseline;
         }
       }
@@ -92,16 +104,35 @@ form {
     color: #f0f0f0;
     font-size: 1.2em;
     margin-bottom: 20px;
+    h4 {
+      margin: 0;
+    }
+    input {
+      font-size: 16px;
+      color: #fff;
+      margin: 0 15px;
+      padding: 6px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+  }
+  #button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+    color: #5fa199;
+    font-size: 1.4em;
+    margin: 0 30px;
+    padding: 10px;
+    width: 130px;
+    border-radius: 3px;
+    border-color: transparent;
+    &:hover {
+      color: #c64832;
+      text-shadow: 2px 2px 4px #551f16;
+    }
   }  
-}
-
-#signature {
-  padding: 5px;
-  width: 180px;
-}
-
-#button {
-  font-size: 1.4em;
-  padding: 10px;
-  width: 100px;
 }
