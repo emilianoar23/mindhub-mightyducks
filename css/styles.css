@@ -219,31 +219,43 @@ form {
   width: 75%;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
   margin: 30px auto;
-  padding: 20px; }
+  padding: 20px;
+  font-size: 1.2em; }
+  form h3 {
+    font-size: 3.5em;
+    text-align: center;
+    color: #f8e12e;
+    font-weight: lighter;
+    text-shadow: 8px 4px 8px #111;
+    padding: 1px;
+    margin-bottom: 5px; }
+  form h4 {
+    color: #f8e12e;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-shadow: 8px 4px 8px #111;
+    padding: 1px;
+    margin: 0 15px;
+    margin-bottom: 5px; }
   form fieldset {
     border: none; }
-    form fieldset h3 {
-      font-size: 3.5em;
-      text-align: center;
-      color: #f8e12e;
-      font-weight: lighter;
-      text-shadow: 8px 4px 8px #111;
-      padding: 1px;
-      margin-bottom: 5px; }
-    form fieldset h4 {
-      font-size: 1.8em;
-      color: #f8e12e;
-      font-weight: lighter;
-      text-shadow: 8px 4px 8px #111;
-      padding: 1px;
-      margin-bottom: 5px; }
     form fieldset legend {
       font-size: 2em;
       font-weight: lighter;
       color: #f8e12e;
       text-shadow: 8px 4px 8px #111;
-      padding: 1px;
-      margin-top: 10px; }
+      padding: 15px; }
+    form fieldset label {
+      font-size: 1.5em;
+      margin: 15px;
+      color: #f8e12e;
+      text-shadow: 8px 4px 8px #111; }
+    form fieldset input {
+      max-width: 300px;
+      margin: 10px;
+      padding: 6px;
+      border: none;
+      outline-color: #5fa199; }
     form fieldset .regform {
       display: flex;
       flex-wrap: wrap;
@@ -268,46 +280,17 @@ form {
       form fieldset .regform .grade {
         display: flex;
         flex-wrap: wrap;
-        align-items: baseline; }
-    form fieldset .school {
+        align-items: center; }
+    form fieldset .form-column {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px; }
-    form fieldset .positions {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px; }
-
-form fieldset {
-  padding: 20px; }
-
-form fieldset label {
-  margin: 5px; }
-
-fieldset label {
-  font-size: 1.5em;
-  color: #f8e12e;
-  text-shadow: 8px 4px 8px #111; }
-
-fieldset input {
-  max-width: 300px;
-  margin: 10px;
-  padding: 6px;
-  border: none;
-  outline-color: #5fa199; }
-
-.text {
-  padding: 20px;
-  color: #fdfdfd;
-  font-size: 1.2em;
-  text-align: center;
-  margin-bottom: 20px; }
-
-.text h4 {
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  color: #f8e12e;
-  text-shadow: 8px 4px 8px #111; }
+      grid-gap: 10px;
+      justify-items: start; }
+  form .text {
+    padding: 20px;
+    color: #f0f0f0;
+    font-size: 1.2em;
+    margin-bottom: 20px; }
 
 #signature {
   padding: 5px;
