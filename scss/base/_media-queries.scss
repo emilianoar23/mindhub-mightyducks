@@ -1,106 +1,131 @@
 /*------------------- MEDIA QUERIES MOBILE -----------------*/
 @media only screen and (min-width: 320px) and (max-width: 479px){
    
-header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        font-size: 1.8em;
-        margin: 15px auto;
-        padding: 0;
-    }
-    nav {
-        flex-wrap: wrap;
+    header {
+        flex-direction: column;
         justify-content: center;
-        font-size: 0.8em;
-        padding: 0;
-        margin: 0;
-    } 
-}
-main {
-    .hero-section {
-        .logo {
-            margin: 0;
-            display: flex;
+        align-items: center;
+        h1 {
+            font-size: 1.8em;
+            margin: 15px auto;
+            padding: 0;
+        }
+        nav {
+            flex-wrap: wrap;
             justify-content: center;
+            font-size: 0.8em;
+            padding: 0;
+            margin: 0;
+        } 
+    }
+/*------------ HOME ------------*/
+    main {
+        .hero-section {
+            height: 40vh;
+            .logo {
+                width: 30%;
+            }
+        }
+        article {
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+        .events {
+            margin: 15px;
+            h3 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 1.4em;
+            }
+        }
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            img {
+                height: 35vh;
+            }
         }
     }
-}
-
-/*------------ FOOTER ------------*/
-
-footer p {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/*------------ HOME ------------*/
-
-.hero-section {
-    background-attachment: scroll;
-}
-
-.hero-section .logo{
-    width: 100px;
-}
-
-.hero-container {
-    height: 80px;
-}
-
-.hero-container h2 {
-    font-size: 1.8em;
-}
-
-.container-events {
-    font-size: 0.6em;
-}
-
-.galery img {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
 /*------------ ABOUT ------------*/
-
-.container-about {
-    font-size: 0.6em;
-}
-
+    .about {
+        margin: 15px;
+        h3 {
+            font-size: 1.6em;
+        }
+        p {
+            font-size: 1.4em;
+        }
+    }
 /*------------ CONTACT ------------*/
-
-.container-contact {
-    font-size: 0.6em;
-}
-
+    .contact {
+        margin: 30px 15px;
+        h3 {
+            font-size: 1.6em;
+        }
+        p {
+            font-size: 1.4em;
+        }
+    }
 /*------------ GAME INFO ------------*/
-
-table {
-    font-size: 0.9em;
-}
-
-thead th {
-    padding: 10px;
-}
-
-.container-gameinfo p {
-    font-size: 1.3em;
-}
-
-iframe  {
-    width: 40%;
-    padding: 10px;
-}
-
+    .container-gameinfo {
+        margin: 30px 10px;
+        padding: 0;
+        flex-wrap: wrap;
+        table {
+            font-size: 1em;
+            width: auto;
+            thead {
+            th {
+                padding: 10px;
+                }
+            }
+        }
+        b {
+            font-weight: lighter;
+        }
+        .locations {
+            padding: 20px;
+            iframe  {
+                width: 40%;
+                padding: 10px;
+            }
+        }
+    }
 /*------------ RULES ------------*/
-
-.container-rules {
-    font-size: 1em;
-}
-
-
+    .rules-container {
+        margin: 20px;
+        font-size: 1em;
+    }
+/*--------- REGISTRATION ---------*/
+    form {
+        font-size: 1em;
+        width: 90%;
+        h3 {
+            font-size: 1.8em;
+        }
+        h4 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        fieldset {
+            legend {
+                padding: 0;
+                margin-bottom: 10px;
+            }
+            label {
+                font-size: 1em;
+                margin: 0 auto;
+            }
+        }
+    }
+/*------------ FOOTER ------------*/
+    footer p {
+        font-size: 1.2em;
+        text-align: center;
+    }
 }
 
 /*------------------- MEDIA QUERIES TABLET -----------------*/

@@ -146,8 +146,7 @@ main {
     font-size: 1.5em;
     color: #fdfdfd;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     width: 90%; }
     .container-gameinfo table caption {
       text-align: left;
@@ -357,48 +356,79 @@ footer {
       font-size: 0.8em;
       padding: 0;
       margin: 0; }
-  main .hero-section .logo {
-    margin: 0;
-    display: flex;
-    justify-content: center; }
+  /*------------ HOME ------------*/
+  main .hero-section {
+    height: 40vh; }
+    main .hero-section .logo {
+      width: 30%; }
+  main article h2 {
+    font-size: 1.8em; }
+  main .events {
+    margin: 15px; }
+    main .events h3 {
+      font-size: 1.6em; }
+    main .events p {
+      font-size: 1.4em; }
+  main .gallery {
+    flex-direction: column;
+    align-items: center;
+    width: 80%; }
+    main .gallery img {
+      height: 35vh; }
+  /*------------ ABOUT ------------*/
+  .about {
+    margin: 15px; }
+    .about h3 {
+      font-size: 1.6em; }
+    .about p {
+      font-size: 1.4em; }
+  /*------------ CONTACT ------------*/
+  .contact {
+    margin: 30px 15px; }
+    .contact h3 {
+      font-size: 1.6em; }
+    .contact p {
+      font-size: 1.4em; }
+  /*------------ GAME INFO ------------*/
+  .container-gameinfo {
+    margin: 30px 10px;
+    padding: 0;
+    flex-wrap: wrap; }
+    .container-gameinfo table {
+      font-size: 1em;
+      width: auto; }
+      .container-gameinfo table thead th {
+        padding: 10px; }
+    .container-gameinfo b {
+      font-weight: lighter; }
+    .container-gameinfo .locations {
+      padding: 20px; }
+      .container-gameinfo .locations iframe {
+        width: 40%;
+        padding: 10px; }
+  /*------------ RULES ------------*/
+  .rules-container {
+    margin: 20px;
+    font-size: 1em; }
+  /*--------- REGISTRATION ---------*/
+  form {
+    font-size: 1em;
+    width: 90%; }
+    form h3 {
+      font-size: 1.8em; }
+    form h4 {
+      font-size: 1.2em;
+      margin: 0; }
+    form fieldset legend {
+      padding: 0;
+      margin-bottom: 10px; }
+    form fieldset label {
+      font-size: 1em;
+      margin: 0 auto; }
   /*------------ FOOTER ------------*/
   footer p {
     font-size: 1.2em;
-    text-align: center; }
-  /*------------ HOME ------------*/
-  .hero-section {
-    background-attachment: scroll; }
-  .hero-section .logo {
-    width: 100px; }
-  .hero-container {
-    height: 80px; }
-  .hero-container h2 {
-    font-size: 1.8em; }
-  .container-events {
-    font-size: 0.6em; }
-  .galery img {
-    display: flex;
-    flex-direction: column;
-    width: 70%; }
-  /*------------ ABOUT ------------*/
-  .container-about {
-    font-size: 0.6em; }
-  /*------------ CONTACT ------------*/
-  .container-contact {
-    font-size: 0.6em; }
-  /*------------ GAME INFO ------------*/
-  table {
-    font-size: 0.9em; }
-  thead th {
-    padding: 10px; }
-  .container-gameinfo p {
-    font-size: 1.3em; }
-  iframe {
-    width: 40%;
-    padding: 10px; }
-  /*------------ RULES ------------*/
-  .container-rules {
-    font-size: 1em; } }
+    text-align: center; } }
 
 /*------------------- MEDIA QUERIES TABLET -----------------*/
 @media only screen and (min-width: 479px) and (max-width: 828px) {
