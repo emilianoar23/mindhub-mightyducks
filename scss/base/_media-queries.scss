@@ -1,5 +1,5 @@
 /*------------------- MEDIA QUERIES MOBILE -----------------*/
-@media only screen and (min-width: 320px) and (max-width: 479px){
+@media only screen and (min-width: 320px) and (max-width: 480px){
    
     header {
         flex-direction: column;
@@ -119,6 +119,20 @@
                 font-size: 1em;
                 margin: 0 auto;
             }
+            .input-wrap {
+                justify-content: flex-start;
+                .gender {
+                    h4 {
+                        margin-right: 10px;
+                    }
+                }
+                .grade {
+                    align-items: baseline;
+                }
+            }
+            .form-column {
+                margin-bottom: 10px;
+            }
         }
     }
 /*------------ FOOTER ------------*/
@@ -127,98 +141,151 @@
         text-align: center;
     }
 }
-
 /*------------------- MEDIA QUERIES TABLET -----------------*/
 
-@media only screen and (min-width: 479px) and (max-width: 828px){
+@media only screen and (min-width: 481px) and (max-width: 767px){
 
-/*------------ HEADER ------------*/
-
-.header-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-container h1 {
-    font-size: 2.4em;
-    text-align: center;
-}
-
-.header-container nav a {
-    font-size: 1.3em;
-}
-
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 2.4em;
+            margin: 15px auto;
+            padding: 0;
+        }
+        nav {
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 1em;
+            padding: 0;
+            margin: 0;
+        } 
+    }
 /*------------ FOOTER ------------*/
-
-footer p {
-    font-size: 1.3em;
-    text-align: center;
-}
-
+    footer p {
+        font-size: 1.3em;
+        text-align: center;
+    }
 /*------------ HOME ------------*/
-
-.hero-section {
-    background-attachment: scroll;
-}
-
-.hero-section .logo{
-    width: 120px;
-}
-
-.hero-container {
-    height: 80px;
-}
-
-.hero-container h2 {
-    font-size: 2.2em;
-}
-
-.container-events {
-    font-size: 0.9em;
-}
-
-.galery img {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
+    main {
+        .hero-section {
+            height: 50vh;
+            .logo {
+                width: 35%;
+            }
+        }
+        article {
+            h2 {
+                font-size: 2.2em;
+            }
+        }
+        .events {
+            margin: 15px;
+            h3 {
+                font-size: 1.9em;
+            }
+            p {
+                font-size: 1.7em;
+            }
+        }
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            img {
+                height: 45vh;
+            }
+        }
+    }
 /*------------ ABOUT ------------*/
-
-.container-about {
-    font-size: 0.9em;
-}
-
+    .about {
+        margin: 15px;
+        h3 {
+            font-size: 1.9em;
+        }
+        p {
+            font-size: 1.7em;
+        }
+    }
 /*------------ CONTACT ------------*/
-
-.container-contact {
-    font-size: 0.9em;
-}
-
+    .contact {
+        margin: 40px 15px 10px;
+        h3 {
+            font-size: 1.9em;
+        }
+        p {
+            font-size: 1.7em;
+        }
+    }
 /*------------ GAME INFO ------------*/
-
-table {
-    font-size: 1.2em;
-}
-
-thead th {
-    padding: 15px;
-}
-
-.container-gameinfo p {
-    font-size: 1.4em;
-}
-
-iframe  {
-    width: 50%;
-    padding: 15px;
-}
-
+    .container-gameinfo {
+        margin: 40px 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+        table {
+            font-size: 1.3em;
+            width: auto;
+            thead {
+            th {
+                padding: 10px;
+                }
+            }
+        }
+        b {
+            font-weight: lighter;
+        }
+        .locations {
+            padding: 20px;
+            iframe  {
+                width: 45%;
+                padding: 10px;
+            }
+        }
+    }
 /*------------ RULES ------------*/
-
-.container-rules {
-    font-size: 1.1em;
-}
-
+    .rules-container {
+        margin: 20px;
+        font-size: 1.5em;
+    }
+/*--------- REGISTRATION ---------*/
+    form {
+        font-size: 1.2em;
+        width: 90%;
+        h3 {
+            font-size: 1.9em;
+        }
+        h4 {
+            font-size: 1em;
+            margin: 0;
+        }
+        fieldset {
+            legend {
+                padding: 0;
+                margin-bottom: 10px;
+            }
+            label {
+                font-size: 1em;
+                margin: 0 auto;
+            }
+            .input-wrap {
+                justify-content: flex-start;
+                .gender {
+                    h4 {
+                        margin-right: 10px;
+                    }
+                }
+                .grade {
+                    align-items: baseline;
+                }
+            }
+            .form-column {
+                margin-bottom: 15px;
+                grid-gap: 20px;
+                input {
+                    white-space: nowrap;
+                  }
+            }
+        }
+    }
 }

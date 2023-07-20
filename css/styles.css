@@ -341,7 +341,7 @@ footer {
     text-shadow: 8px 4px 8px #111; }
 
 /*------------------- MEDIA QUERIES MOBILE -----------------*/
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
     flex-direction: column;
     justify-content: center;
@@ -425,58 +425,116 @@ footer {
     form fieldset label {
       font-size: 1em;
       margin: 0 auto; }
+    form fieldset .input-wrap {
+      justify-content: flex-start; }
+      form fieldset .input-wrap .gender h4 {
+        margin-right: 10px; }
+      form fieldset .input-wrap .grade {
+        align-items: baseline; }
+    form fieldset .form-column {
+      margin-bottom: 10px; }
   /*------------ FOOTER ------------*/
   footer p {
     font-size: 1.2em;
     text-align: center; } }
 
 /*------------------- MEDIA QUERIES TABLET -----------------*/
-@media only screen and (min-width: 479px) and (max-width: 828px) {
-  /*------------ HEADER ------------*/
-  .header-container {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .header-container h1 {
-    font-size: 2.4em;
-    text-align: center; }
-  .header-container nav a {
-    font-size: 1.3em; }
+    header h1 {
+      font-size: 2.4em;
+      margin: 15px auto;
+      padding: 0; }
+    header nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1em;
+      padding: 0;
+      margin: 0; }
   /*------------ FOOTER ------------*/
   footer p {
     font-size: 1.3em;
     text-align: center; }
   /*------------ HOME ------------*/
-  .hero-section {
-    background-attachment: scroll; }
-  .hero-section .logo {
-    width: 120px; }
-  .hero-container {
-    height: 80px; }
-  .hero-container h2 {
+  main .hero-section {
+    height: 50vh; }
+    main .hero-section .logo {
+      width: 35%; }
+  main article h2 {
     font-size: 2.2em; }
-  .container-events {
-    font-size: 0.9em; }
-  .galery img {
-    display: flex;
+  main .events {
+    margin: 15px; }
+    main .events h3 {
+      font-size: 1.9em; }
+    main .events p {
+      font-size: 1.7em; }
+  main .gallery {
     flex-direction: column;
-    width: 70%; }
+    align-items: center;
+    width: 80%; }
+    main .gallery img {
+      height: 45vh; }
   /*------------ ABOUT ------------*/
-  .container-about {
-    font-size: 0.9em; }
+  .about {
+    margin: 15px; }
+    .about h3 {
+      font-size: 1.9em; }
+    .about p {
+      font-size: 1.7em; }
   /*------------ CONTACT ------------*/
-  .container-contact {
-    font-size: 0.9em; }
+  .contact {
+    margin: 40px 15px 10px; }
+    .contact h3 {
+      font-size: 1.9em; }
+    .contact p {
+      font-size: 1.7em; }
   /*------------ GAME INFO ------------*/
-  table {
-    font-size: 1.2em; }
-  thead th {
-    padding: 15px; }
-  .container-gameinfo p {
-    font-size: 1.4em; }
-  iframe {
-    width: 50%;
-    padding: 15px; }
+  .container-gameinfo {
+    margin: 40px 10px;
+    padding: 10px;
+    flex-wrap: wrap; }
+    .container-gameinfo table {
+      font-size: 1.3em;
+      width: auto; }
+      .container-gameinfo table thead th {
+        padding: 10px; }
+    .container-gameinfo b {
+      font-weight: lighter; }
+    .container-gameinfo .locations {
+      padding: 20px; }
+      .container-gameinfo .locations iframe {
+        width: 45%;
+        padding: 10px; }
   /*------------ RULES ------------*/
-  .container-rules {
-    font-size: 1.1em; } }
+  .rules-container {
+    margin: 20px;
+    font-size: 1.5em; }
+  /*--------- REGISTRATION ---------*/
+  form {
+    font-size: 1.2em;
+    width: 90%; }
+    form h3 {
+      font-size: 1.9em; }
+    form h4 {
+      font-size: 1em;
+      margin: 0; }
+    form fieldset legend {
+      padding: 0;
+      margin-bottom: 10px; }
+    form fieldset label {
+      font-size: 1em;
+      margin: 0 auto; }
+    form fieldset .input-wrap {
+      justify-content: flex-start; }
+      form fieldset .input-wrap .gender h4 {
+        margin-right: 10px; }
+      form fieldset .input-wrap .grade {
+        align-items: baseline; }
+    form fieldset .form-column {
+      margin-bottom: 15px;
+      grid-gap: 20px; }
+      form fieldset .form-column input {
+        white-space: nowrap; } }
